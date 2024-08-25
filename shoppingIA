@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping IA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0a74da;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007acc;
+            padding: 10px;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .categories, .promotions, .best-sellers {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #0a74da;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            background-color: #0a74da;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping IA</h1>
+        <p>La forma más divertida y adictiva de comprar</p>
+    </header>
+
+    <nav>
+        <a href="#">Categorías</a>
+        <a href="#">Promociones</a>
+        <a href="#">Lo Más Vendido</a>
+        <a href="#">Calificaciones</a>
+        <a href="#">Interacciones</a>
+    </nav>
+
+    <div class="container">
+        <section class="categories">
+            <h2>Categorías y Subcategorías</h2>
+            <div class="grid">
+                <div class="item">Categoría 1</div>
+                <div class="item">Categoría 2</div>
+                <div class="item">Categoría 3</div>
+                <div class="item">Categoría 4</div>
+            </div>
+        </section>
+
+        <section class="promotions">
+            <h2>Promociones</h2>
+            <div class="grid">
+                <div class="item">Promo 1</div>
+                <div class="item">Promo 2</div>
+                <div class="item">Promo 3</div>
+                <div class="item">Promo 4</div>
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>Lo Más Vendido</h2>
+            <div class="grid">
+                <div class="item">Producto 1</div>
+                <div class="item">Producto 2</div>
+                <div class="item">Producto 3</div>
+                <div class="item">Producto 4</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shopping IA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
